@@ -1,0 +1,42 @@
+﻿@model List<Slider>
+<main>
+    <section>
+        <div class="slider-container">
+            <div class="slider-track">
+
+                @foreach(var slider in Model)
+                {
+                    <div class="slide">
+                        <img src="~/assets/images/@slider.ImageUrl" alt="" class="photo">
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="indicators">
+            <div class="dot active-dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="motivation">
+            <div class="motiv">SƏN DƏ VOLEYBOL FAN KLUBA QOŞUL, TRİBUNADA YERİNİ AL, SƏSİNLƏ OYUNU DƏYİŞ!</div>
+            <div class="btn-sign">
+                <button class="sign">ÜZV OL</button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section>
+        <div>
+        </div>
+    </section>
+
+
+
+
+
+</main>
+

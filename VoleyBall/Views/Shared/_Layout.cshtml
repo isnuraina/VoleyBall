@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="~/assets/css/style.css" />
+    <title>Volleyball</title>
+</head>
+<body>
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="~/assets/images/logo.png" alt="Fan Klubu Logo" />
+        </div>
+
+        <nav class="nav-links">
+            <a href="#" class="header-link">Ana Səhifə</a>
+            <a href="#" class="header-link">Komanda</a>
+            <a href="#" class="header-link">Oyun Cədvəli</a>
+            <a href="#" class="header-link">Fun Klub Haqqında</a>
+            <a href="#" class="header-link">Əlaqə</a>
+        </nav>
+
+        <div class="right-icons">
+            <i class="fa-solid fa-globe"></i>
+            <span>EN</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="join-btn">
+                <i class="fa-solid fa-circle-user"></i> Üzv ol
+            </button>
+        </div>
+
+    </header>
+
+            @RenderBody()
+    <script src="~/assets/js/app.js"></script>
+
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - VoleyBall - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
